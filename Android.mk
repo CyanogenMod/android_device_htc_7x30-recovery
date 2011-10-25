@@ -1,6 +1,4 @@
-ifdef $(BOARD_USES_7X30_RECOVERY)
-
-ifeq ($(BOARD_USES_RECOVERY_CHARGEMODE),true)
+ifeq ($(BOARD_USES_7X30_RECOVERY),true)
 include $(CLEAR_VARS)
 LOCAL_MODULE := choice_fn
 LOCAL_MODULE_TAGS := eng
@@ -44,7 +42,6 @@ else
 LOCAL_SRC_FILES := ../../../$(BOARD_HTCBATT)
 endif
 include $(BUILD_PREBUILT)
-endif
-
 
 endif
+
