@@ -1,4 +1,7 @@
+LOCAL_PATH := $(call my-dir)
+
 ifeq ($(BOARD_USES_7X30_RECOVERY),true)
+
 include $(CLEAR_VARS)
 LOCAL_MODULE := choice_fn
 LOCAL_MODULE_TAGS := eng
